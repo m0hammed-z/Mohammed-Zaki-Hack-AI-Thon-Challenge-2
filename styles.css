@@ -1,0 +1,259 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9em;
+}
+
+/* Home Page */
+body.home {
+    background-color: #f4f4f4;
+}
+
+.home header {
+    background-color: #f7c143;
+    color: #333;
+}
+
+.home h1 {
+    font-size: 3rem;
+    font-family: 'Georgia', serif;
+}
+
+.home nav ul li a {
+    color: #333;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.home nav ul li a:hover {
+    color: #f7c143;
+}
+
+.home main {
+    padding: 40px;
+    text-align: center;
+}
+
+.home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.home p {
+    color: #555;
+}
+
+/* Historical Failures (British Museum Theme) */
+body.british-museum {
+    background-color: #e0d2b6;
+    color: #333;
+}
+
+.british-museum header {
+    background-color: #937b4b;
+    color: white;
+}
+
+.british-museum h1 {
+    font-family: 'Times New Roman', serif;
+}
+
+.british-museum h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.british-museum article {
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+.british-museum img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.british-museum button {
+    padding: 10px 20px;
+    background-color: #937b4b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.british-museum button:hover {
+    background-color: #705937;
+}
+
+/* Art Failures (Behance Theme) */
+body.behance {
+    background-color: #f3f3f3;
+    color: #1e1e1e;
+}
+
+.behance header {
+    background-color: #212121;
+    color: white;
+}
+
+.behance h1 {
+    font-size: 3rem;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.behance main {
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.behance article {
+    margin-bottom: 40px;
+}
+
+.behance img {
+    width: 100%;
+    height: auto;
+}
+
+.behance button {
+    padding: 10px 20px;
+    background-color: #1e1e1e;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.behance button:hover {
+    background-color: #575757;
+}
+
+/* Modern Failures (Apple-like Theme) */
+body.modern {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.modern header {
+    background-color: #f7f7f7;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+.modern h1 {
+    font-size: 3rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.modern h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.modern img {
+    width: 100%;
+    height: auto;
+}
+
+.modern article {
+    margin: 40px auto;
+    max-width: 900px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.modern button {
+    padding: 10px 20px;
+    background-color: #007aff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modern button:hover {
+    background-color: #005bb5;
+}
+
+/* Science Failures (NASA Theme) */
+body.nasa {
+    background-color: #001f3f;
+    color: white;
+}
+
+.nasa header {
+    background-color: #003366;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.nasa h1 {
+    font-size: 3rem;
+    font-family: 'Verdana', sans-serif;
+}
+
+.nasa h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #99ccff;
+}
+
+.nasa article {
+    background-color: #00274d;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.nasa img {
+    width: 100%;
+    height: auto;
+}
+
+.nasa button {
+    padding: 10px 20px;
+    background-color: #99ccff;
+    color: #001f3f;
+    border: none;
+    cursor: pointer;
+}
+
+.nasa button:hover {
+    background-color: #3385ff;
+}

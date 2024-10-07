@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Failures</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function revealInfo(topicId, query) {
+            const hiddenInfo = document.getElementById(topicId);
+            hiddenInfo.style.display = 'block';  // Show the hidden info
+            const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+            window.open(searchUrl, '_blank');    // Open Google search in a new tab
+        }
+    </script>
+</head>
+<body class="behance">
+    <header>
+        <h1>Art Failures</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="modern.html">Modern Failures</a></li>
+                <li><a href="science.html">Science Failures</a></li>
+                <li><a href="history.html">Historical Failures</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Artistic Endeavors That Didn't Quite Work</h2>
+        <article>
+            <!-- Guernica Section -->
+            <h3>Pablo Picasso's Guernica Reception</h3>
+            <img src="guernica.jpg" alt="Guernica">
+            <p>Pablo Picasso's iconic painting "Guernica" is a powerful political statement against war, yet its initial reception was mixed. Upon its unveiling in 1937, some critics dismissed it as chaotic and abstract, failing to appreciate its deeper message about the horrors of conflict. This misunderstanding created a divide between avant-garde art and the general public. Over time, however, "Guernica" became a symbol of anti-war sentiment, showcasing how initial failure in recognition can evolve into a lasting legacy. Picasso's experience teaches artists that the impact of their work may not be immediately recognized and that persistence is essential in pursuing one's artistic vision.</p>
+            <button onclick="revealInfo('guernica', 'Picasso Guernica reception failure')">Learn More</button>
+            <p id="guernica" class="hidden-info" style="display:none;">"Guernica" initially faced criticism but evolved into a powerful symbol of anti-war sentiment.</p>
+
+            <!-- Starry Night Section -->
+            <h3>Vincent van Gogh's Starry Night</h3>
+            <img src="van.jpg" alt="Starry Night">
+            <p>Vincent van Gogh's "Starry Night" is celebrated as a masterpiece today, but during his lifetime, van Gogh struggled to find success. He sold only one painting while alive and was often criticized for his unconventional style. "Starry Night," painted while he was in a mental asylum, was dismissed by critics for its vibrant colors and emotional intensity. However, after his death, van Gogh's work gained popularity, eventually influencing modern art movements. His journey reflects the struggles of many artists who face rejection before being recognized for their contributions. Van Gogh’s legacy reminds us that artistic vision and expression can transcend initial failures, resonating with future generations.</p>
+            <button onclick="revealInfo('starryNight', 'Van Gogh Starry Night failure')">Learn More</button>
+            <p id="starryNight" class="hidden-info" style="display:none;">Van Gogh's "Starry Night" faced initial criticism but became a beloved masterpiece.</p>
+
+            <!-- Add more art failure sections as needed -->
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Virtual Museum of Failures</p>
+    </footer>
+</body>
+</html>

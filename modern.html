@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Failures</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function revealInfo(topicId, query) {
+            const hiddenInfo = document.getElementById(topicId);
+            hiddenInfo.style.display = 'block';  // Show the hidden info
+            const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+            window.open(searchUrl, '_blank');    // Open Google search in a new tab
+        }
+    </script>
+</head>
+<body class="modern">
+    <header>
+        <h1>Modern Failures</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="science.html">Science Failures</a></li>
+                <li><a href="history.html">Historical Failures</a></li>
+                <li><a href="art.html">Art Failures</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Failures that Shaped the Modern World</h2>
+        <article>
+            <!-- Apple's Antenna Gate Section -->
+            <h3>Apple's Antenna Gate</h3>
+            <img src="antennagate.jpeg" alt="Apple Antenna Gate">
+            <p>Apple's Antenna Gate was a significant failure following the launch of the iPhone 4 in 2010. Users reported that holding the phone in a certain way would cause signal loss. This issue sparked widespread media coverage and criticism, leading Apple to hold a press conference to address the problem. Although the situation seemed dire, Apple's response—offering free cases to mitigate the issue—showed their commitment to customer satisfaction. The company ultimately learned valuable lessons about quality control and customer feedback. In the long run, the incident reinforced the importance of thorough product testing before launch. Apple’s ability to navigate this failure helped solidify its reputation as a resilient and customer-oriented brand. The iPhone 4 remains one of Apple's best-selling devices, demonstrating that failure can lead to innovation and improvement. Antenna Gate also reminded tech companies about the importance of addressing user concerns transparently.</p>
+            <button onclick="revealInfo('antenna', 'Apple Antenna Gate')">Learn More</button>
+            <p id="antenna" class="hidden-info" style="display:none;">Apple's Antenna Gate incident highlighted the importance of product testing and customer communication.</p>
+
+            <!-- Microsoft's Windows Vista Section -->
+            <h3>Microsoft's Windows Vista</h3>
+            <img src="windows.png" alt="Windows Vista">
+            <p>Windows Vista was launched in 2007 with much anticipation but quickly became known as a failure. Users complained about its slow performance, heavy system requirements, and compatibility issues with existing software. The operating system's extensive security features were often more of a hindrance than a help, frustrating users. Microsoft faced backlash from both consumers and businesses, leading to a significant decline in its reputation. In response, Microsoft learned from the shortcomings of Vista and focused on improving user experience for its next operating system, Windows 7. Windows 7 was released in 2009 and received much praise for addressing the flaws of Vista. This experience taught Microsoft the importance of user feedback and adaptability. Vista's failure ultimately shaped the future direction of Microsoft's software development. It emphasized that understanding user needs is vital for success in the tech industry.</p>
+            <button onclick="revealInfo('vista', 'Windows Vista failure')">Learn More</button>
+            <p id="vista" class="hidden-info" style="display:none;">Windows Vista's shortcomings led to crucial improvements in Windows 7, emphasizing user experience and feedback.</p>
+
+            <!-- Segway's Market Failure Section -->
+            <h3>Segway's Market Failure</h3>
+            <img src="segway.jpeg" alt="Segway">
+            <p>The Segway Personal Transporter, launched in 2001, was hailed as a revolutionary invention that would change urban transportation. Despite its innovative design and technology, the Segway failed to achieve widespread adoption. Factors contributing to its market failure included its high price, limited practicality, and regulatory restrictions. The public perception of the Segway also struggled, often viewed as a novelty rather than a serious mode of transportation. Additionally, the emergence of alternative personal mobility devices overshadowed its potential. Although the Segway is still used in niche markets and tours, it never reached the mainstream success anticipated. Segway’s journey serves as a cautionary tale for inventors about the importance of market research and understanding consumer behavior. The company ultimately pivoted towards addressing specific markets, focusing on short-distance travel. This transition highlighted the need for adaptability in the face of failure. Segway’s experience has influenced the design and marketing of personal transportation devices that followed.</p>
+            <button onclick="revealInfo('segway', 'Segway market failure')">Learn More</button>
+            <p id="segway" class="hidden-info" style="display:none;">The Segway’s failure to gain popularity highlights the need for market understanding and consumer preferences.</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Virtual Museum of Failures</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Failures</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function revealInfo(topicId, query) {
+            const hiddenInfo = document.getElementById(topicId);
+            hiddenInfo.style.display = 'block';  // Show the hidden info
+            const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+            window.open(searchUrl, '_blank');    // Open Google search in a new tab
+        }
+    </script>
+</head>
+<body class="nasa">
+    <header>
+        <h1>Science Failures</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="modern.html">Modern Failures</a></li>
+                <li><a href="history.html">Historical Failures</a></li>
+                <li><a href="art.html">Art Failures</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Scientific Failures that Led to Innovation</h2>
+        <article>
+            <!-- Thomas Edison Section -->
+            <h3>Thomas Edison and the Lightbulb</h3>
+            <img src="lightbulb.webp" alt="Thomas Edison">
+            <p>Thomas Edison is known as one of the most prolific inventors in history, but his journey to invent the lightbulb was riddled with failure. Edison famously tested over 1,000 materials before finding the right filament to make the electric lightbulb viable. Each failure, however, provided valuable data and helped him refine his designs. Many materials burned out too quickly, couldn't sustain a glow, or were too expensive to produce. It was through these repeated trials and errors that Edison learned how to make a long-lasting, affordable lightbulb. His perseverance in the face of failure exemplifies how scientific progress often comes from incremental improvements and learning from mistakes. Despite his numerous setbacks, Edison saw each failure as a step forward. His efforts not only led to the lightbulb but also the creation of electrical power systems, transforming modern society. Edison's work became a benchmark for other inventors, proving that great success often follows great failure.</p>
+            <button onclick="revealInfo('edison', 'Thomas Edison lightbulb failure')">Learn More</button>
+            <p id="edison" class="hidden-info" style="display:none;">Edison's persistence through 1,000 failures led to the creation of the first viable lightbulb and revolutionized modern living.</p>
+
+            <!-- Marie Curie Section -->
+            <h3>Marie Curie's Radioactive Research</h3>
+            <img src="radioactive.webp" alt="Marie Curie">
+            <p>Marie Curie, one of the most famous scientists in history, faced many obstacles in her pioneering research on radioactivity. Her work required long hours of painstaking isolation and refinement of radioactive elements, which took a toll on her health. At the time, the harmful effects of radiation were unknown, and Curie suffered from severe radiation poisoning due to her experiments. Despite this personal cost, Curie's discoveries laid the groundwork for the development of X-rays, cancer treatment, and nuclear power. Her failures included numerous instances of inconclusive results or dangerous reactions. Each setback, however, only fueled her determination to uncover the secrets of radioactivity. Marie Curie's journey reflects the idea that scientific discovery often involves risk and adversity, and her legacy continues to inspire scientists around the world today. Curie's dedication to science and her willingness to confront failure ultimately changed the landscape of medical science.</p>
+            <button onclick="revealInfo('curie', 'Marie Curie radioactive research')">Learn More</button>
+            <p id="curie" class="hidden-info" style="display:none;">Curie's perseverance through failure led to groundbreaking discoveries in radioactivity, transforming medical science.</p>
+
+            <!-- NASA's Mars Climate Orbiter Section -->
+            <h3>NASA's Mars Climate Orbiter</h3>
+            <img src="mars.jpeg"" alt="Mars Climate Orbiter">
+            <p>The Mars Climate Orbiter, launched in 1998, was designed to study the Martian climate but ultimately failed due to a critical miscalculation. The spacecraft disintegrated in the Martian atmosphere because engineers at NASA and the contractor Lockheed Martin used different units for measurement—metric versus imperial. This costly error resulted in a $327 million loss and was a huge setback for NASA's Mars exploration program. The incident underscored the importance of communication and collaboration in engineering projects, leading NASA to implement stricter protocols and reviews to prevent similar failures in future missions. The Mars Climate Orbiter's failure highlighted the significance of precise measurements and teamwork in the field of space exploration. NASA learned from this incident, which ultimately contributed to more robust engineering practices. Subsequent missions have benefited from this experience, enhancing the reliability of their exploration efforts.</p>
+            <button onclick="revealInfo('orbiter', 'NASA Mars Climate Orbiter failure')">Learn More</button>
+            <p id="orbiter" class="hidden-info" style="display:none;">The Mars Climate Orbiter's failure emphasized the need for accurate communication and measurements in engineering.</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Virtual Museum of Failures</p>
+    </footer>
+</body>
+</html>

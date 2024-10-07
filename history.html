@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Failures</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function revealInfo(topicId, query) {
+            const hiddenInfo = document.getElementById(topicId);
+            hiddenInfo.style.display = 'block';  // Show the hidden info
+            const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+            window.open(searchUrl, '_blank');    // Open Google search in a new tab
+        }
+    </script>
+</head>
+<body class="british-museum">
+    <header>
+        <h1>Historical Failures</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="modern.html">Modern Failures</a></li>
+                <li><a href="science.html">Science Failures</a></li>
+                <li><a href="art.html">Art Failures</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Historical Failures That Shaped Our World</h2>
+        <article>
+            <!-- Great Wall of China Section -->
+            <h3>The Great Wall of China’s Construction</h3>
+            <img src="great wall of china.jpeg" alt="Great Wall of China">
+            <p>The Great Wall of China is a marvel of engineering, but its construction is also marked by significant failures. Originally built as a defense mechanism, various sections of the wall were poorly designed, leading to vulnerabilities that allowed invasions. Additionally, the immense cost of construction led to heavy taxation, causing suffering among local populations. Despite these failures, the wall ultimately became a symbol of Chinese strength and perseverance. The lessons learned during its construction informed future architectural projects, highlighting the importance of sustainable practices and community considerations in large-scale engineering efforts. The Great Wall is now not only a UNESCO World Heritage Site but also a testament to the complexities of human ambition.</p>
+            <button onclick="revealInfo('greatWall', 'Great Wall of China construction failures')">Learn More</button>
+            <p id="greatWall" class="hidden-info" style="display:none;">The Great Wall of China teaches the importance of design, community considerations, and sustainable practices.</p>
+
+            <!-- Napoleon's Invasion of Russia Section -->
+            <h3>Napoleon's Invasion of Russia</h3>
+            <img src="russia.avif" alt="Napoleon">
+            <p>Napoleon Bonaparte's invasion of Russia in 1812 is often cited as one of history's greatest military failures. Despite having a formidable army, the campaign was plagued by logistical issues, harsh weather conditions, and insufficient supplies. As winter approached, Napoleon's troops faced devastating losses, leading to a disastrous retreat. This failure significantly weakened Napoleon’s military power and marked the beginning of the decline of his empire. The invasion serves as a powerful lesson about the importance of planning, adaptability, and understanding one's environment in military strategy. The repercussions of Napoleon's failure influenced European politics for decades and reshaped the course of history.</p>
+            <button onclick="revealInfo('napoleon', 'Napoleon invasion of Russia failure 1812')">Learn More</button>
+            <p id="napoleon" class="hidden-info" style="display:none;">Napoleon’s invasion of Russia highlights the need for planning and understanding environmental challenges in military strategy.</p>
+
+            <!-- Titanic Section -->
+            <h3>The Titanic</h3>
+            <img src="titanic.jpeg" alt="Titanic">
+            <p>The sinking of the Titanic in 1912 stands as one of the most infamous maritime disasters in history. Dubbed "unsinkable," the Titanic struck an iceberg on its maiden voyage, resulting in the loss of over 1,500 lives. Investigations following the tragedy revealed design flaws, insufficient lifeboats, and poor safety measures. The Titanic disaster led to significant changes in maritime safety regulations, including lifeboat requirements for all vessels and improved iceberg detection technology. This failure served as a wake-up call for the shipping industry, emphasizing the need for stringent safety protocols and preparedness for emergencies. The Titanic’s story continues to captivate people today, reminding us that even the most advanced technologies can fail and that safety must always be a priority.</p>
+            <button onclick="revealInfo('titanic', 'Titanic disaster iceberg 1912')">Learn More</button>
+            <p id="titanic" class="hidden-info" style="display:none;">The Titanic disaster led to crucial changes in maritime safety regulations and practices.</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Virtual Museum of Failures</p>
+    </footer>
+</body>
+</html>
